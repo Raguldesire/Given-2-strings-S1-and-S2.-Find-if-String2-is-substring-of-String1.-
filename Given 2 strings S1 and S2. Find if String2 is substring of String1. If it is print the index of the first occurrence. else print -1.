@@ -1,0 +1,16 @@
+n=input()
+k=input()
+m=[]
+for j in k:
+  m.append(j)
+l=[]
+for i in n:
+  l.append(i)
+r=[]
+for j in l:
+  if j in m:
+    r.append(j)
+if len(r)==len(m):
+  print(l.index(r[0]))
+else:
+    print("-1")
